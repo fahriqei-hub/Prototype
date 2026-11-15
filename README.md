@@ -1,97 +1,66 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# MIT App Inventor - Sistem Akademik Unla & Web View Fabric
 
-# Getting Started
+## MIT App Inventor
+Aplikasi mobile berbasis Android sederhana yang dibangun menggunakan **MIT App Inventor**. Proyek ini dibuat untuk memenuhi **Tugas Pertemuan 1** dengan tujuan mempermudah akses cepat pengguna ke portal website [Kampus / Berita Teknologi] langsung dari perangkat seluler tanpa perlu membuka browser secara manual, dilengkapi dengan kontrol navigasi dasar.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## Web View Fabric
+Aplikasi mobile berbasis Android berperforma tinggi yang dibangun menggunakan **React Native New Architecture (Fabric)** dan mengintegrasikan paket **`react-native-webview`**. Proyek ini mendemonstrasikan bagaimana memuat halaman web eksternal secara langsung di dalam aplikasi seluler dengan rendering yang sinkron, cepat, dan responsif.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Fitur Utama MIT App Inventor
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+* **Auto-Load Portal Web:** Otomatis memuat halaman utama website tujuan (`https://siakad.unla.ac.id/gate/login`) segera setelah aplikasi dibuka.
+* **Navigasi Cepat (Home & Refresh):** Dilengkapi tombol interaktif untuk kembali ke halaman beranda (*Home*) dan memuat ulang halaman (*Refresh*) apabila terjadi kendala koneksi.
+* **Antarmuka Ringan & Responsif:** Menggunakan komponen *WebViewer* bawaan sehingga aplikasi memiliki ukuran file yang kecil, ringan dijalankan, dan tampilan yang menyesuaikan layar smartphone Android.
 
-```sh
-# Using npm
-npm start
+## Fitur Utama Web View Fabric
 
-# OR using Yarn
-yarn start
-```
+* **React Native New Architecture (Fabric):** Memanfaatkan sistem rendering baru berbasis Fabric untuk performa UI yang lebih halus dan responsif.
+* **Embedded WebView:** Merender halaman web eksternal (`https://siakad.unla.ac.id/gate/login` atau portal kampus) secara *seamless* di dalam aplikasi.
+* **Optimasi Interaksi Web:** Dilengkapi dengan dukungan JavaScript aktif (`javaScriptEnabled={true}`) dan indikator status muat (`startInLoadingState={true}`).
+* **Antarmuka Kustom:** Desain header aplikasi yang bersih menggunakan `SafeAreaView`, `StatusBar`, dan styling fleksibel khas komponen native.
+* 
+---
 
-## Step 2: Build and run your app
+## Teknologi yang Digunakan dalam MIT App Inventor
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+* **Platform & Visual Programming:** MIT App Inventor (Block-based Coding)
+* **Komponen Utama:** `WebViewer`, `Button`, `HorizontalArrangement`
+* **Version Control & Kolaborasi:** Git & GitHub
+* **Target Sistem Operasi:** Android (`.apk`)
 
-### Android
+## Teknologi yang Digunakan dalam Web View Fabric
 
-```sh
-# Using npm
-npm run android
+* **Framework:** React Native (New Architecture / Fabric Enabled)
+* **Library Utama:** `react-native-webview`
+* **Bahasa Pemrograman:** JavaScript / JSX
+* **Environment & Tools:** Node.js, Android Studio Emulator, Gradle
+* 
+---
 
-# OR using Yarn
-yarn android
-```
+## Cara Instalasi & Menjalankan MIT App Inventor
 
-### iOS
+Karena proyek ini dikembangkan menggunakan *visual programming* berbasis cloud (MIT App Inventor), terdapat dua cara untuk menjalankan atau memodifikasi proyek ini:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+### Instalasi Langsung di Perangkat Android (Menggunakan APK)
+1. Unduh file **`fahri.apk`** yang tersedia di bagian *Releases* atau folder `/apk` pada repositori ini.
+2. Pindahkan file `.apk` tersebut ke perangkat smartphone Android kamu.
+3. Buka file tersebut dan izinkan instalasi dari sumber tidak dikenal (*Install from Unknown Sources*) jika diminta oleh sistem.
+4. Setelah terpasang, buka aplikasi dan pastikan perangkat terhubung ke internet.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+## 🚀 Cara Instalasi & Menjalankan
 
-```sh
-bundle install
-```
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal:
 
-Then, and every time you update your native dependencies, run:
+### 1. Kloning Repositori
+### 2. Instalasi Dependensi (npm install)
+### 3. Konfigurasi Fabric (newArchEnabled=true)
+### 4. Jalankan Aplikasi ke Emulator (npx react-native run-android)
 
-```sh
-bundle exec pod install
-```
+## Dokumentasi MIT App Inventor
+<img width="352" height="676" alt="Screenshot 2026-11-07 155128" src="https://github.com/user-attachments/assets/cfcd3c8b-0de9-44b1-9ca6-79502bf339b5" />
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/40986e24-ac9b-4b71-8e19-07aa6ad9e954" />
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Dokumentasi Web View Fabric
+<img width="387" height="891" alt="image" src="https://github.com/user-attachments/assets/653b408a-a208-4276-86f7-ba217d5dec1e" />
