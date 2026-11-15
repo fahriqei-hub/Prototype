@@ -9,7 +9,7 @@ const App = () => {
       
       {/* Header Aplikasi */}
       <View style={styles.header}>
-        <Text style={styles.headerText}>Portal Kampus - Fabric WebView</Text>
+        <Text style={styles.headerText}>Fahri Qeizal - Fabric WebView</Text>
       </View>
 
       {/* Komponen WebView Fabric */}
