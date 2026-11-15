@@ -53,10 +53,9 @@ Karena proyek ini dikembangkan menggunakan *visual programming* berbasis cloud (
 
 Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal:
 
-### 1. Kloning Repositori
-### 2. Instalasi Dependensi (npm install)
-### 3. Konfigurasi Fabric (newArchEnabled=true)
-### 4. Jalankan Aplikasi ke Emulator (npx react-native run-android)
+1. Instalasi Dependensi (npm install)
+2. Konfigurasi Fabric (newArchEnabled=true)
+3. Jalankan Aplikasi ke Emulator (npx react-native run-android)
 
 ## Dokumentasi MIT App Inventor
 <img width="352" height="676" alt="Screenshot 2026-11-07 155128" src="https://github.com/user-attachments/assets/cfcd3c8b-0de9-44b1-9ca6-79502bf339b5" />
