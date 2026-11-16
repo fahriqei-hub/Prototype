@@ -49,7 +49,7 @@ Karena proyek ini dikembangkan menggunakan *visual programming* berbasis cloud (
 3. Buka file tersebut dan izinkan instalasi dari sumber tidak dikenal (*Install from Unknown Sources*) jika diminta oleh sistem.
 4. Setelah terpasang, buka aplikasi dan pastikan perangkat terhubung ke internet.
 
-## 🚀 Cara Instalasi & Menjalankan
+## Cara Instalasi & Menjalankan
 
 Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal:
 
